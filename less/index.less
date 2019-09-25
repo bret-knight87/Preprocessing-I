@@ -54,6 +54,129 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	max-width: 75%;
+  	margin: auto; 
 }
 
+@background: #e6f2ff;
+@pic-width: 25%;
+@h1size: 400%;
+@fontMargin: 15px;
+@center: center-text;
+@headsize: 150%;
+@tablepad: 5px;
+@contentMargin: 15px 0;
+
+.@{center} {
+	text-align: center;
+}
+
+nav {
+	display: flex;
+	justify-content: flex-end;
+	ul {
+		width: 40%;
+		display: flex;
+		justify-content: space-between;
+		margin: 15px 25px;
+	}
+	a {
+		display: flex;
+		text-decoration: none;
+		color: black;
+	}
+
+}
+
+.top {
+	display: flex;
+	flex-direction: column;
+	background-color: @background;
+	height: 50vh;
+	img {
+		width: 50%;
+		height: 50%;
+		margin: 25px 0px 5px;
+	}
+	h1 {
+		font-size: @h1size;
+		margin: 5px;
+	}
+	h2 {
+		border-bottom: solid 1px silver;
+		padding: 0px 0px 15px;
+		font-size: @headsize;
+		margin: @fontMargin;
+	}
+	p {
+		background: silver;
+		border: solid 1px silver;
+		opacity: 1.0;
+		border-radius: 5px;
+		width: 15%;
+		text-align: center;
+		padding: 5px;
+		margin: 0px 10px;
+	}
+	a {
+		color: black;
+		text-decoration: none;
+	}
+	a:visited {
+		color: black;
+	}
+}
+
+.about {
+	display: flex;
+	height: 50vh;
+	span {
+		display: flex;
+		flex-direction: column;
+	}
+	h3 {
+		font-size: @headsize;
+		margin: @contentMargin;
+	}
+	p {
+		margin: 15px 30px 0 0;
+	}
+	iframe {
+		margin: @contentMargin;
+	}
+}
+
+.history {
+	// border: solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	h3 {
+		font-size: @headsize;
+		margin: @contentMargin;
+	}
+	table {
+		width: 100%;
+	}
+	th {
+		// border: solid;
+		margin: @fontMargin;
+		text-align: start;
+		padding: @tablepad;
+		background: lightgrey;
+	}
+	td {
+		// border: solid;
+		margin: @fontMargin;
+		padding: @tablepad;
+	}
+	tr:last-child {
+		background: lightgrey;
+	} 
+}
+footer {
+	background-color: @background;
+	margin: @contentMargin;
+	text-align: center;
+}
